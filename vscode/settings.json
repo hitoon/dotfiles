@@ -1,61 +1,63 @@
 {
-  "editor.fontSize": 16,
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.copyOnSelection": true,
-  "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/.config/nvim/init.vim",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true,
-    "source.fixAll": true
-  },
-  "eslint.packageManager": "yarn",
-  "files.autoSave": "afterDelay",
-  "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Darcula Theme from IntelliJ",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "workbench.editor.untitled.hint": "hidden",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "go.toolsManagement.autoUpdate": true,
-  "redhat.telemetry.enabled": false,
-  "git.autofetch": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "explorer.confirmDragAndDrop": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.insertFinalNewline": true,
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveServer.settings.donotShowInfoMsg": true,
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "[python]": {
-    "editor.formatOnType": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "security.workspace.trust.enabled": false
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnType": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "editor.codeActionsOnSave": {
+    // "source.fixAll.eslint": true,
+    "source.fixAll": true
+  },
+  "editor.fontSize": 16,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "git.autofetch": true,
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.enabled": false,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 16,
+  "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.config/nvim/init.vim",
+  "workbench.colorTheme": "Darcula Theme from IntelliJ",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme"
 }
