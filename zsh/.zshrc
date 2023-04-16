@@ -11,19 +11,23 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
 alias vim='nvim'
 alias python='python3'
 alias pip='pip3'
 alias g='git'
 alias his='history 1 | peco'
+# exa
+if [[ $(command -v exa) ]]; then
+  alias ls='exa --icons --git'
+  alias la='exa -a --icons --git'
+  alias ll='exa -aal --icons --git'
+fi
+
 
 # lsコマンドの色を変更
 export LSCOLORS=gxfxcxdxbxegedabagacad
-
-# pyenv https://github.com/pyenv/pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+PROMPT='%{$fg[yellow]%}[%D{%y/%m/%f}|%D{%L:%M:%S}] '$PROMPT
 
 # flutter
 export PATH="$PATH:/Users/hit/development/flutter/bin"
@@ -32,15 +36,8 @@ export PATH="$PATH:/Users/hit/development/flutter/bin"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-
 # zshでglob表現を含むコマンドをrunする
 setopt +o nomatch
-
-# java
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-# gitignore
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -63,3 +60,7 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+# apikey.shの読み込み
+source "$HOME/apikey.sh"
+
