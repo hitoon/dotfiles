@@ -58,5 +58,6 @@
   "workbench.colorTheme": "Darcula Theme from IntelliJ",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.fontFamily": "Hack Nerd Font"
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "workbench.editor.enablePreview": false
 }
