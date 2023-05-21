@@ -22,9 +22,6 @@
     "editor.defaultFormatter": "ms-python.autopep8"
   },
   "python.formatting.provider": "none",
-  "[typescript]": {
-    "editor.tabSize": 2
-  },
   "editor.codeActionsOnSave": {
     // "source.fixAll.eslint": true,
     "source.fixAll": true
@@ -54,14 +51,5 @@
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.editor.enablePreview": false,
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
-  "[css]": {
-    "editor.tabSize": 2
-  },
-  "[scss]": {
-    "editor.tabSize": 2
-  },
   "editor.tabSize": 2
 }
