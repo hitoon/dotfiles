@@ -2,7 +2,9 @@
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
@@ -12,23 +14,15 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.autopep8"
   },
+  "python.formatting.provider": "none",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "editor.codeActionsOnSave": {
@@ -59,5 +53,15 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "editor.tabSize": 2
 }
