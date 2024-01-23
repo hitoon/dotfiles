@@ -9,22 +9,21 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
   "python.formatting.provider": "none",
   "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true,
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.fontSize": 16,
   "editor.formatOnPaste": true,
@@ -47,9 +46,10 @@
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "~/.config/nvim/init.vim",
   "workbench.colorTheme": "Darcula Theme from IntelliJ",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.editor.enablePreview": false,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "hediet.vscode-drawio.resizeImages": null,
+  "workbench.editor.empty.hint": "hidden"
 }
