@@ -51,5 +51,20 @@
   "workbench.editor.enablePreview": false,
   "editor.tabSize": 2,
   "hediet.vscode-drawio.resizeImages": null,
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "chat.viewSessions.orientation": "stacked",
+  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.initialPermissionMode": "plan",
+  "claudeCode.useCtrlEnterToSend": true,
+  "claudeCode.selectedModel": "claude-opus-4-6",
+  "dart.flutterSdkPath": "/Users/hit/flutter",
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "explorer.compactFolders": false,
+  "git.confirmSync": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }

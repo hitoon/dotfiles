@@ -26,11 +26,11 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 PROMPT='%{$fg[yellow]%}[%D{%y/%m/%f}|%D{%L:%M:%S}] '$PROMPT
 
 
-# exa
-if [[ $(command -v exa) ]]; then
-  alias ls='exa --icons --git'
-  alias la='exa -a --icons --git'
-  alias ll='exa -aal --icons --git'
+# eza
+if [[ $(command -v eza) ]]; then
+  alias ls='eza --icons --git'
+  alias la='eza -a --icons --git'
+  alias ll='eza -aal --icons --git'
 fi
 
 # pyenv https://github.com/pyenv/pyenv
@@ -66,4 +66,33 @@ bindkey '^]' peco-src
 
 # apikey.shの読み込み
 source "$HOME/apikey.sh"
+
+
+# intellj
+idea() {
+  open -na "IntelliJ IDEA.app" --args nosplash "$@"
+}
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/hit/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Added by Antigravity
+export PATH="/Users/hit/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
